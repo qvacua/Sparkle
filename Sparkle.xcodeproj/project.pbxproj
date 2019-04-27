@@ -1101,13 +1101,14 @@
 			children = (
 				5AA96C561E0AE0DB00CA4346 /* generate_appcast */,
 				1495006D195FBBBD00BC5B5B /* Sparkle */,
-				14732BB81960EEB600593899 /* Resources */,
-				61227A100DB5484000AB99EA /* Tests */,
+
+        14732BB81960EEB600593899 /* Resources */,
+        61227A100DB5484000AB99EA /* Tests */,
 				61B5F91D09C4CF7F00B25A18 /* Test Application */,
 				14732BB51960ECBA00593899 /* Third Party */,
 				1420DE391962322200203BB0 /* Documentation */,
 				FA1941C40D94A6EA00DD942E /* Configurations */,
-				726B2B5E1C645FC900388755 /* UI Tests */,
+				726B2B5E1C645FC900388755 /* UITests */,
 				5AB8F1A0214DA72000A1187F /* generate_keys */,
 				5A5ADED8214EDE4900DF0099 /* sign_update */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -1549,7 +1550,7 @@
 			path = ../../fileop;
 			sourceTree = "<group>";
 		};
-		726B2B5E1C645FC900388755 /* UI Tests */ = {
+		726B2B5E1C645FC900388755 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
 				720B16431C66433D006985FB /* SUTestApplicationTest.swift */,
@@ -2861,6 +2862,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941CC0D94A70100DD942E /* ConfigCommonRelease.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: Tae Won Ha (H96Q2NKTQH)";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				DEVELOPMENT_TEAM = H96Q2NKTQH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
@@ -2883,7 +2889,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -2894,7 +2899,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -2904,7 +2908,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AB8F1A9214DA85900A1187F /* ConfigGenerateKeysRelease.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -2914,7 +2917,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7205C4351E12CA7000E370AE /* ConfigGenerateAppcastDebug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 			};
 			name = Debug;
 		};
@@ -2922,7 +2924,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7205C4351E12CA7000E370AE /* ConfigGenerateAppcastDebug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 			};
 			name = Coverage;
 		};
@@ -2930,7 +2931,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7205C4341E12C66D00E370AE /* ConfigGenerateAppcastRelease.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 			};
 			name = Release;
 		};
@@ -2938,7 +2938,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.2;
@@ -2949,7 +2948,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AB8F1AA214DA85900A1187F /* ConfigGenerateKeysDebug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.2;
@@ -2960,7 +2958,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AB8F1A9214DA85900A1187F /* ConfigGenerateKeysRelease.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.2;
