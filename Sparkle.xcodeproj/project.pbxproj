@@ -2806,6 +2806,7 @@
 		14732BC81960F69300593899 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_CODE_SIGN_FLAGS = "--timestamp --options=runtime";
 			};
 			name = Release;
 		};
@@ -2818,6 +2819,7 @@
 		14950062195FB89500BC5B5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_CODE_SIGN_FLAGS = "--timestamp --options=runtime";
 			};
 			name = Release;
 		};
@@ -3137,6 +3139,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4311C8229D613B00A5503D /* ed25519-Release.xcconfig */;
 			buildSettings = {
+				OTHER_CODE_SIGN_FLAGS = "--timestamp --options=runtime";
 			};
 			name = Release;
 		};
@@ -3158,6 +3161,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA4311FB229D657A00A5503D /* bsdiff-Release.xcconfig */;
 			buildSettings = {
+				OTHER_CODE_SIGN_FLAGS = "--timestamp --options=runtime";
 			};
 			name = Release;
 		};
